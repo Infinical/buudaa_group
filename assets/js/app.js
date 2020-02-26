@@ -1,7 +1,12 @@
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
-import css from "../css/app.css"
+import css from "../css/app.css";
+import UIkit from "uikit";
+import Icons from "uikit/dist/js/uikit-icons";
+
+// loads the Icon plugin
+UIkit.use(Icons);
 
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
@@ -9,7 +14,7 @@ import css from "../css/app.css"
 //
 // Import dependencies
 //
-import "phoenix_html"
+import "phoenix_html";
 
 // Import local files
 //
